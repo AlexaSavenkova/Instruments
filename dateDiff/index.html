@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <button id="toggle-btn"></button>
+  <form id="datecalc">
+    <h3>Калькулятор дат</h3>
+    <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+    </label>
+    <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+    </label>
+    <button type="submit">Расчитать промежуток</button>
+    <p id="datecalc__result"></p>
+  </form>
+
+    <div id="timer-block">
+        <h3>Timer</h3>
+<!--        <form action="">-->
+            <div class="timer-form">
+                <div class="form-column">
+                    <label for="hours">hours</label>
+                    <input type="number" name="hours" id="hours" min="0" max="24" value="0">
+                </div>
+                <div class="form-column">
+                    <label for="min">min</label>
+                    <input type="number" name="min" id="min" min="0" max="59" value="0">
+                </div>
+                <div class="form-column">
+                    <label for="sec">sec</label>
+                    <input type="number" name="sec" id="sec" min="0" max="59" value="0">
+                </div>
+
+            </div>
+            <button type="submit" id="start-timer">Start</button>
+            <button type="submit" id="stop-timer" disabled>Stop</button>
+<!--        </form>-->
+        <p id="timer__result"></p>
+    </div>
+
+</body>
+</html>
