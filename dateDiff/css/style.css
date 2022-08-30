@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+.timer-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+.form-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+#timer__result {
+    font-size: 20px;
+}
